@@ -71,6 +71,59 @@ https://public.tableau.com/views/Book2_17715037991180/ProductandOrderAnalytics?:
 2. Дослідити причини скасованих та замовлень, що мають статус "unavailable" - скасування та замовлення, що не були доставлені - зменшують лояльність клієнтів, який і так не багато.
 3. Перед початком сезонну інвестувати у маркетинг та запаси для продуктів із найбільшими продажами, щоб збільшити продажі.
 
+# Project Title: Product and Order Analytics Dashboard
+# Goal
+To showcase the company’s key KPIs: sales, customers, and orders, and to identify patterns in sales, orders, and customer behavior that are useful for improving business efficiency.
+
+# Data
+Dataset used: Cosmetics Sales Dataset
+
+# Tools
+SQL for data aggregation
+Pandas for data cleaning
+Tableau for visualization
+
+# Implementation
+Dataset Analysis  
+The dataset consists of 4 tables:
+cosmetic_products_data: product_id, product_name, product_category, product_weight_g, product_photos_qty
+cosmetic_order_data: order_id, order_purchase_date, order_status
+cosmetics_order_items_data: product_id, seller_id, price, order_id
+cosmetics_review_data: order_id, review_ratings, review_message, images_attached
+
+SQL Query  
+Created a query to combine information about orders, products, sellers, and customer reviews in the context of cosmetics sales.
+Results: SQL Output - https://drive.google.com/file/d/1A70jCJ6hoWbI5P39V5AavY6oKQaIFWNs/view
+
+Data Preprocessing with Pandas  
+Cleaned and prepared the dataset for visualization.
+Results: Colab Notebook - https://colab.research.google.com/drive/1bOPNxvEgBszjTZuzFdXgv6p36EAE-FLS?usp=sharing
+
+Interactive Dashboard in Tableau
+
+KPIs: total sales, number of orders, number of customers
+Trends: line chart showing sales dynamics throughout the year
+Products: horizontal bar chart with sales volumes by product
+Top Customers: list of highest‑value buyers with sales amounts
+Order Status: pie chart showing delivered, cancelled, and unavailable orders
+Product Ratings: top‑10 products by customer ratings
+
+Dashboard: [Tableau Visualization](https://public.tableau.com/views/Book2_17715037991180/ProductandOrderAnalytics?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+# Results
+The dashboard enables quick evaluation of business performance, identification of the most profitable customers, and products with the highest sales.
+
+# Visualization Insights
+Total sales: $99,862; Orders: 258; Customers: 9
+Trends: clear seasonality — peak sales in November, high order volume in December but lower total sales
+Best‑selling products: Fitness band, Anti‑hairfall shampoo, Nail polish
+Largest customer purchase: $17,533
+Highest‑rated product: Body wash
+Delivered orders: ~95%; Cancelled orders: ~4%
+Recommendations
+Small customer base creates revenue risk if a major client stops ordering. To increase sales and stability, expand the customer base.
+Investigate reasons for cancelled and “unavailable” orders — these reduce customer loyalty, which is already limited.
+Before seasonal peaks, invest in marketing and inventory for top‑selling products to maximize sales.
 
 
 
