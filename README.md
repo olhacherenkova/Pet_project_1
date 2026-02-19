@@ -28,3 +28,6 @@ images_attached
 Цей SQL-запит формує єдину таблицю, яка поєднує інформацію про замовлення, товари, продавців та відгуки клієнтів у контексті продажів косметики.
 Pезультати запиту:
 https://drive.google.com/file/d/1A70jCJ6hoWbI5P39V5AavY6oKQaIFWNs/view
+
+Аналітичний дашборд :
+https://public.tableau.com/views/Book2_17715037991180/ProductandOrderAnalytics?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
